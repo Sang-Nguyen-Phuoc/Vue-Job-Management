@@ -6,6 +6,11 @@ import { reactive } from 'vue';
 import { useToast } from 'vue-toastification';
 
 
+
+
+const toast = useToast();
+
+
 const form = reactive({
     type: 'Part-Time',
     title: '',
@@ -20,7 +25,7 @@ const form = reactive({
     }
 });
 
-const toast = useToast();
+
 
 const handleSubmit = async () => {
     const newJob = {

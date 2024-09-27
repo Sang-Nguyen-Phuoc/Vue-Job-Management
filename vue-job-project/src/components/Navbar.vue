@@ -23,14 +23,14 @@ const isActiveLink = (routePath) => {
                     </RouterLink>
                     <div class="md:ml-auto">
                         <div class="flex space-x-2">
-                            <RouterLink to="/" :class="[isActiveLink('/') ? 'bg-green-900' :
+                            <RouterLink to="/" :class="[isActiveLink('/') ? 'bg-green-900 cursor-default' :
                                 ' hover:bg-gray-900 hover:text-white', 'text-white', 'rounded-md', 'px-3', 'py-2']">
                                 Home</RouterLink>
-                            <RouterLink to="/jobs" :class="[isActiveLink('/jobs') ? 'bg-green-900' :
+                            <RouterLink to="/jobs" :class="[isActiveLink('/jobs') ? 'bg-green-900 cursor-default' :
                                 ' hover:bg-gray-900 hover:text-white', 'text-white', 'rounded-md', 'px-3', 'py-2']">
                                 Jobs
                             </RouterLink>
-                            <RouterLink to="/add-job" :class="[isActiveLink('/add-job') ? 'bg-green-900' :
+                            <RouterLink to="/add-job" :class="[isActiveLink('/add-job') ? 'bg-green-900 cursor-default' :
                                 ' hover:bg-gray-900 hover:text-white', 'text-white', 'rounded-md', 'px-3', 'py-2']">Add
                                 Job
                             </RouterLink>
